@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACCOMMODATION</title>
+        <link rel="icon" href="main-page-img/logo.png" type="image/png">
+        <link rel="stylesheet" href="accommodation.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <nav class="top-nav transparent">
+            <div class="logo">
+                <img src="main-page-img/logo.png" alt="Visit Malaysia Logo" style="height: 30px;"> Visit Malaysia
+            </div>
+            <ul>
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="chatbot/index.html">Chatbot</a></li>
+
+            </ul>
+        </nav>
+        <script>
+
+            window.addEventListener('scroll', function() {
+                var nav = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    nav.classList.remove('transparent');
+                    nav.classList.add('opaque');
+                } else {
+                    nav.classList.remove('opaque');
+                    nav.classList.add('transparent');
+                }
+            });
+        
+            document.getElementById('explore-button').addEventListener('click', function(event) {
+                event.preventDefault(); 
+                var dropdown = document.getElementById('dropdown-menu');
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            });
+        
+            window.onhower = function(event) {
+                if (!event.target.matches('.button')) {
+                    var dropdowns = document.getElementsByClassName('dropdown-content');
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.style.display === 'block') {
+                            openDropdown.style.display = 'none';
+                        }
+                    }
+                }
+            }
+        
+        
+            document.querySelector('.carousel-container').addEventListener('mouseover', function() {
+            document.querySelector('.carousel').style.animationPlayState = 'paused';
+        });
+        
+        document.querySelector('.carousel-container').addEventListener('mouseout', function() {
+            document.querySelector('.carousel').style.animationPlayState = 'running';
+        });
+        </script>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item" style="background-image: url('image/a4.jpg');">
+                    <button class="carousel-btn prev" onclick="prevSlide()">&#8592;</button>
+                    <div class="package-info">
+                        <h2>Grand Hyatt Kuala Lumpur</h2>
+                        <p>Ideal for both business and leisure travelers</p>
+                        <div class="days">3 Days</div>
+                        <div class="price">From 800$</div>
+                        <img src="image/a4.1.jpg" alt="img">
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide()">&#8594;</button>
+                </div>
+                <div class="carousel-item" style="background-image: url('image/a2.1.jpg');">
+                    <button class="carousel-btn prev" onclick="prevSlide()">&#8592;</button>
+                    <div class="package-info">
+                        <h2>Anantara Desaru Coast Resort & Villas
+                        </h2>
+                        <p>Enjoy the sun and the sea.</p>
+                        <div class="days">7 Days</div>
+                        <div class="price">From 1,500$</div>
+                        <img src="image/a2.jpg" alt="img">
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide()">&#8594;</button>
+                </div>
+                <div class="carousel-item" style="background-image: url('image/a3.jpg');">
+                    <button class="carousel-btn prev" onclick="prevSlide()">&#8592;</button>
+                    <div class="package-info">
+                        <h2>Pangkor Laut Resort</h2>
+                        <p>Luxury Hotels in Malaysia</p>
+                        <div class="days">10 Days</div>
+                        <div class="price">From 2,000$</div>
+                        <img src="image/a3.1.jpg" alt="img">
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide()">&#8594;</button>
+                </div>
+                <div class="carousel-item" style="background-image: url('image/a1.jpg');">
+                    <button class="carousel-btn prev" onclick="prevSlide()">&#8592;</button>
+                    <div class="package-info">
+                        <h2>Berjaya Langkawi Resort</h2>
+                        <p>Book 5 nights in advance and receive up to a 20% discount at Berjaya Langkawi Resort, a splendid 5-star Langkawi destination.</p>
+                        <div class="days">5 Days</div>
+                        <div class="price">From 1,200$</div>
+                        <img src="image/a1.1.jpg" alt="img">
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide()">&#8594;</button>
+                </div>
+                <div class="carousel-item" style="background-image: url('image/a5.jpg');">
+                    <button class="carousel-btn prev" onclick="prevSlide()">&#8592;</button>
+                    <div class="package-info">
+                        <h2>Shangri-La Kuala Lumpur</h2>
+                        <p>Situated in the Kuala Lumpur City Centre part of Kuala Lumpur</p>
+                        <div class="days">14 Days</div>
+                        <div class="price">From 3,000$</div>
+                        <img src="image/a5.1.jpg" alt="img">
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide()">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    
+        <script src="familyfun.js"></script>
+
+        <br>
+        <div class="containerDest">
+            <h1 style="text-align: center;">TOP ACCOMODATION</h1>
+            <div class="destinations">
+                <div class="destination">
+                    <div class="country">Kuala Lumpur</div>
+                    <img src="image/h1.jpg" alt="kloe">
+                    <div class="destination-info">
+                        <h3>KLoe Hotel</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <div class="country">Johor</div>
+                    <img src="image/h2.jpg" alt="img">
+                    <div class="destination-info">
+                        <h3>Fraser Place Puteri Harbour </h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <div class="country">Perak</div>
+                    <img src="image/h3.jpg" alt="img">
+                    <div class="destination-info">
+                        <h3>The Horizon</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <div class="country">Penang</div>
+                    <img src="image/h4.jpg" alt="img">
+                    <div class="destination-info">
+                        <h3>SUNRISE Gurney Seaview Luxury Duplex</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <div class="country">Sarawak</div>
+                    <img src="image/h5.jpg" alt="img">
+                    <div class="destination-info">
+                        <h3>Sheraton Kuching Hotel
+                        </h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+        </div>
+        <br><hr><br>
+        <div class="container">
+            <nav class="state">
+                <ul>
+                    <li><a onclick="changeLocation('kl')">KUALA LUMPUR</a></li>
+                    <li><a onclick="changeLocation('selangor')">SELANGOR</a></li>
+                    <li><a onclick="changeLocation('negeriSembilan')">NEGERI SEMBILAN</a></li>
+                    <li><a onclick="changeLocation('melacca')">MELACCA</a></li>
+                    <li><a onclick="changeLocation('johor')">JOHOR</a></li>
+                    <li><a onclick="changeLocation('kelantan')">KELANTAN</a></li>
+                    <li><a onclick="changeLocation('kedah')">KEDAH</a></li>
+                    <li><a onclick="changeLocation('perak')">PERAK</a></li>
+                    <li><a onclick="changeLocation('terengganu')">TERENGGANU</a></li>
+                    <li><a onclick="changeLocation('pahang')">PAHANG</a></li>
+                    <li><a onclick="changeLocation('penang')">PENANG</a></li>
+                    <li><a onclick="changeLocation('perlis')">PERLIS</a></li>
+                    <li><a onclick="changeLocation('sabah')">SABAH</a></li>
+                    <li><a onclick="changeLocation('sarawak')">SARAWAK</a></li>
+                </ul>
+            </nav>
+            <div class="content-section">
+                <h1 style="color:#000000" id="pageTitle"></h1>
+                <p id="pageDescription"></p>
+                <div id="hotelGrid" class="hotel-grid">
+                </div>
+            </div>
+        </div>
+        <script src="accommodation.js"></script>
+
+        <div class="box">
+            <iframe controls autoplay
+                src="https://www.youtube.com/embed/LKUiQvuzrfA?autoplay=1&loop=1&playlist=LKUiQvuzrfA" frameborder="0" allowfullscreen></iframe>
+            </iframe>
+        </div>
+        
+        <br>
+        <footer>
+            <div class="container-footer">
+                <div class="feedback-form">
+                    <form class="form" id="feedbackForm">
+                        <p class="title">Feedback form</p>
+                        <p class="message">Fill in the form if you have any comment.</p>
+                        
+                        <label>
+                            <span>Rating</span>
+                            <p class="message">How would you rate the accommodation information provided?</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <div class="rating">
+                                            <input value="5" name="rate" id="star5" type="radio">
+                                            <label title="text" for="star5"></label>
+                                            <input value="4" name="rate" id="star4" type="radio">
+                                            <label title="text" for="star4"></label>
+                                            <input value="3" name="rate" id="star3" type="radio">
+                                            <label title="text" for="star3"></label>
+                                            <input value="2" name="rate" id="star2" type="radio">
+                                            <label title="text" for="star2"></label>
+                                            <input value="1" name="rate" id="star1" type="radio">
+                                            <label title="text" for="star1"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </label>
+                        
+                        <label>
+                            <textarea class="input" rows="2" id="feedback"></textarea>
+                            <span>Feedback</span>
+                        </label>
+                        
+                        <button class="submit" type="submit">Submit</button>
+                    </form>
+                    
+                    <script>
+                        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+                            event.preventDefault(); 
+
+                            const rating = document.querySelector('input[name="rate"]:checked').value;
+
+                            const feedback = document.getElementById('feedback').value;
+
+                            const formData = {
+                                rating: rating,
+                                feedback: feedback
+                            };
+
+                            localStorage.setItem('feedbackData', JSON.stringify(formData));
+
+                            alert('Your feedback has been saved. Thank you!');
+                        });
+                    </script>
+                    
+                </div>
+        
+                <div class="footer">
+                    <div class="column">
+                        <h3>Content</h3>
+                        <ul>
+                            <li><a href="accommodation.html">Accomodation</a></li>
+                            <li><a href="caves.html">Caves</a></li>
+                            <li><a href="citylife.html">City Life</a></li>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="familyfun.html">Family Fun</a></li>
+                            <li><a href="forest-reservation.html">Forest Reservations</a></li>
+                            <li><a href="island.html">Islands</a></li>
+                            <li><a href="mountains.html">Mountains</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Services</h3>
+                        <ul>
+                            
+                            <li><a href="#">Joining our Team</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><a href="https://x.com/?lang=en">Twitter</a></li>
+                            <li><a href="https://www.youtube.com/">Youtube</a></li>
+                            <li><a href="https://www.skype.com/en/">Skype</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
