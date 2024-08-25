@@ -1,0 +1,468 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url('public/citylife/bakcground.jpg') no-repeat center center fixed; /* Add background image */
+    background-size: cover; /* Ensure background covers the full page */
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay if needed */
+
+}
+
+/* Image Container */
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(70%);
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.header-content {
+    z-index: 10;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    max-width: 600px;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #e39c82;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #ffd700;
+    font-weight: 700;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #ff8c00;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.explore-btn:hover {
+    background-color: #ffa500;
+    transform: translateY(-3px);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 15px 0;
+}
+nav.transparent {
+    background: transparent;
+}
+nav.opaque {
+    background: rgba(0, 0, 0, 0.744);
+}
+nav .logo {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family:serif;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-container {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; /* Takes up the remaining space, pushing the footer down */
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #16353e;
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer-left,
+.footer .footer-right {
+    max-width: 500px;
+    text-align: left;
+}
+
+.footer .footer-right {
+    text-align: right;
+}
+
+.footer h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#visitor-counter {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #163138;
+}
+
+@media (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .footer-left,
+    .footer .footer-right {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    border-radius: 50%;
+    
+}
+
+.gotopbtn.visible {
+    opacity: 1;
+}
+
+.malaysiadescriptioncontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+    background-color: rgba(255,255,255,0.80);
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 10%;
+}
+.text-content1 {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: white;
+}
+.text-content2 {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: white;
+}
+.text-content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.discover-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.discover-btn:hover {
+    background-color: #0056b3;
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.image-content img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10%;
+}
+
+/* Center the Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Centers the cards vertically */
+    gap: 20px; /* Increases space between the cards */
+    max-width: 70%; /* Limits the width of the container */
+    margin: 20px auto; /* Centers the container on the page */
+    padding: 20px; /* Adds padding inside the container */
+    background: #fafafa; /* Adds a light background color */
+    border-radius: 12px; /* Rounds the container edges */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a soft shadow around the container */
+    background-color: rgba(255,255,255,0.80);
+
+}
+
+.card {
+    width: 25%; /* Smaller card size */
+    height: 50%; /* Defines card height */
+    aspect-ratio: 1/1.2; /* Maintains aspect ratio */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 70%; /* Adjusts image height relative to card */
+    border-radius: 8px 8px 0 0;
+    object-fit: cover; /* Ensures all images cover the same area */
+
+}
+
+.card h3 {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adds a more pronounced shadow on hover */
+
+}
+
+
+/* Modal Styling - Center the Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 50%; /* Center horizontally */
+    top: 50%;  /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust position to perfectly center */
+    width: 70%; /* Smaller width for the modal */
+    max-width: 650px; /* Set a max-width to prevent it from being too large */
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease, opacity 0.4s ease; /* Adds smooth transition to pop-up */
+}
+
+.modal.show {
+    display: flex; /* Display the modal */
+    opacity: 1; /* Make it fully visible */
+    transform: translate(-50%, -50%) scale(1); /* Scale up to full size */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for better visibility */
+}
+
+.modal img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.modal h3 {
+    margin: 10px 0;
+}
+
+.modal p {
+    margin-top: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+}
+
+/* Article Container Styles */
+.article-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 0 10px; /* Add padding for left and right spacing */
+
+}
+
+.article {
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: calc(33.333% - 20px); /* Adjust width to fit three articles with space */
+
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #ddd;
+    height: 200px; /* Set height to match other containers */
+    object-fit: cover; /* Ensure image covers the area with the correct aspect ratio */
+    transition: transform 0.3s;
+}
+
+.article:hover img {
+    transform: scale(1.05);
+}
+
+.article h3 {
+    font-size: 1.2em;
+    margin: 15px;
+    color: #333;
+}
+
+.article p {
+    padding: 0 15px 15px;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+}
+
