@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Travel Guide | Visit Malaysia</title>
+    <meta name="description" content="Discover Malaysia's unique places, and the fusions of cultures from all around the Asian continent.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="main-page-img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+<body>
+    
+    <nav class="transparent">
+        <div class="logo">
+            <img src="public/images/logo.png" alt="Visit Malaysia Logo" style="height: 30px;">  Visit Malaysia</div>
+        <ul>
+            <li><a href="home-page.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="chatbot/index.html">Chatbot</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Organization Chart</h1>
+        <img src="public/orgchart.png" alt = "orgchart">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email us at: <a href="ongyisheng0309@gmail.com">ongyisheng0309@gmail.com</a></p>
+            <p>Call us: <a href="tel:+601111998088">+601111998088</a></p>
+            <p>Visit our office: 1234 DingDong Street, Kuala Lumpur, Malaysia</p>
+        </div>
+        <form class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <link rel="icon" href="main-page-img/logo.png" type="image/png">
+            <h1>Visit Malaysia</h1>
+            <p>Discover Malaysia's wonders and rich culture. Enjoy your journey through our beautiful country.</p>
+        </div>
+        <div class="footer-right">
+            <p>Copyright © 2024 by  University Tunku Abdul Rahman. All rights reserved.</p>
+            
+        </div>
+    </div>
+</footer>
+
+    <script>
+          document.addEventListener('scroll', function() {
+            var gotopbtn = document.querySelector('.gotopbtn');
+            if (window.scrollY > 300) { 
+                gotopbtn.classList.add('visible');
+            } else {
+                gotopbtn.classList.remove('visible');
+            }
+        });
+
+        document.querySelector('.contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        alert('Your message has been successfully sent!');
+
+        var successMessage = document.createElement('p');
+        successMessage.textContent = 'Thank you! Your message has been successfully sent.';
+        successMessage.style.color = 'green';
+        successMessage.style.fontWeight = 'bold';
+        document.querySelector('.contact-container').appendChild(successMessage);
+
+        
+        event.target.reset();
+    });
+    </script>
+</body>
+</html>
