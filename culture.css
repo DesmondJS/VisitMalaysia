@@ -1,0 +1,407 @@
+nav.top-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 15px 0;
+}
+
+nav.top-nav.transparent {
+    background-color: transparent;
+}
+
+nav.top-nav.opaque {
+    background: rgba(0, 0, 0, 0.744);
+}
+
+
+nav.top-nav .logo {
+
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: serif;
+    display: flex;
+}
+
+
+nav.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav.top-nav ul li {
+    margin: 0 15px;
+}
+
+nav.top-nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav.top-nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.header {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('cultures-img/cultureheader.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*header image*/
+.header image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/*header overlay: to make it pop*/
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.509);
+    z-index: -1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+/*title:Explore....*/
+@font-face {
+    font-family: 'head-font';
+    src: url('main-page-img/HerrVonMuellerhoff-Regular.ttf') format('truetype');
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin: 350px 0 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.header h1::first-letter {
+    font-family: 'default-font', 'Times New Roman', Times, serif;
+    font-size: 8.5rem;
+}
+
+/*subtitle:quote*/
+.header p {
+    font-size: 1rem;
+    margin: -30px 0 0 0;
+    color: #bec4bd;
+    font-family: Arial Black;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #16353e;
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer-left,
+.footer .footer-right {
+    max-width: 500px;
+    text-align: left;
+}
+
+.footer .footer-right {
+    text-align: right;
+}
+
+.footer h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#visitor-counter {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #163138;
+}
+
+@media (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .footer-left,
+    .footer .footer-right {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 1;
+}
+
+/*Start*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #006400;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Section Styling */
+.culture-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 4/3;
+    /* Maintain a consistent aspect ratio */
+}
+
+.culture-section.Xlarge {
+    grid-column: span 8;
+    grid-row: span 4;
+}
+
+.culture-section.large {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.culture-section.medium {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.culture-section.small {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+/* Image Handling */
+.culture-section img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Cover the container without distortion */
+    border-radius: 10px;
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Text Sections */
+.text-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-section.full {
+    grid-column: span 8;
+}
+
+.text-section.half {
+    grid-column: span 4;
+}
+
+.text-section.quarter {
+    grid-column: span 2;
+}
+
+h2,
+h3 {
+    margin: 0;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    /* Line thickness */
+    background-color: #000;
+    /* Line color */
+    margin: 20px 0;
+    /* Space around the line */
+}
+
+/* Reusing Code from mountains.css*/
+#mountains-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.mountain-item {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.mountain-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mountain-item:hover img {
+    transform: scale(1.1);
+}
+
+.mountain-overlay {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.mountain-item:hover .mountain-overlay {
+    opacity: 1;
+}
+
+.mountain-overlay h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.mountain-overlay p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+
+.mountain-item h2 {
+    padding: 10px;
+    font-size: 20px;
+    color: #dfdbdb;
+}
+
+.mountain-item p {
+    padding: 10px;
+    color: #c5c1c1;
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #27ae60;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: 'To Top';
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    opacity: 0.5;
+    border-radius: 50%;
+    /* Hidden by default */
+    transition: opacity 0.3s;
+}
+
+.gotopbtn.visible {
+    opacity: 1;
+}
