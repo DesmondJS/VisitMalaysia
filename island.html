@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Travel Guide | Visit Malaysia</title>
+    <meta name="description" content="Discover Malaysia's unique places, and the fusions of cultures from all around the Asian continent.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="island-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="main-page-img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+<body>
+    
+    <nav class="transparent">
+        <div class="logo">
+            <img src="public/images/logo.png" alt="Visit Malaysia Logo" style="height: 30px;">  Visit Malaysia</div>
+        <ul>
+            <li><a href="home-page.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="chatbot/index.html">Chatbot</a></li>
+
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+        <div class="image-container">
+            <img src="public/images/sempurna2.jfif" alt="Malaysia Scenery">
+            <div class="overlay">
+                <div class="header-content">
+                    <h1>Welcome to Malaysia</h1>
+                    <p>Explore the hidden treasures in the island of Malaysia</p>
+                    <a href="#destinations" class="explore-btn">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class = "description1">
+        <p><strong>Discover Where to Go?</p>
+    </div>
+    <div class="slider">
+        <div class="map-container">
+            <img src="public/images/Map.png" usemap="#image-map" alt="Malaysia Map">
+        
+            <map name="image-map">
+                <area alt="Pulau Pangkor" title="Pulau Pangkor" coords="51,198,20" shape="circle" onclick="showDescription('Pangkor')">
+                <area alt="Pulau Redang" title="Pulau Redang" coords="206,120,21" shape="circle" onclick="showDescription('Redang')">
+                <area alt="Pulau Tioman" title="Pulau Tioman" coords="264,279,21" shape="circle" onclick="showDescription('Tioman')">
+                <area alt="Pulau Manukan" title="Pulau Manukan" coords="709,90,18" shape="circle" onclick="showDescription('Manukan')">
+                <area alt="Semporna" title="Semporna" coords="846,174,26" shape="circle" onclick="showDescription('Semporna')">
+            </map>
+        </div>
+    </div>
+    
+    <main>
+        <div class="description-photo-wrapper">
+            <div class="description-container" id="description-container">
+                <h2 id="island-title">Island Name</h2>
+                <p id="island-description">Select an island from the map to learn more about it.</p>
+            </div>
+            <div class="photo-container" id="photo-container">
+                <img src="public/images/sempurna2.jfif" alt="Island Photo" id="island-photo">
+            </div>
+        </div>
+        <div class = "description2">
+            <p><strong>Discover What to Do?</p>
+        </div>
+
+        <!--card container-->>
+        <div class="card-container" id="card-container"></div>
+        <!--take a break container-->>
+        <div class="takeabreakcontainer">
+            <div class="text-content">
+                <h2>Take a Break</h2>
+                <p>Escape to the serene landscapes of Malaysia's islands, where relaxation meets adventure in paradise. Discover your perfect getaway today.</p>
+                <a href="https://www.borneotropicaladventures.com/category/semporna-island-hopping" class="discover-btn">DISCOVER</a>
+            </div>
+            <div class="image-content">
+                <img src="public/images/afterpost/takeabreak.webp" alt="Take a Break">
+            </div>
+        </div>     
+            <div class="lifewithseacontainer">
+                <div class="image-content">
+                    <img src="public/images/afterpost/livewithsea.webp" alt="Image Description">
+                </div>
+                <div class="text-content">
+                    <h2>Life with Sea</h2>
+                    <p>Embodies a lifestyle deeply connected to the ocean, where daily life is influenced by the rhythms of the tides, the abundance of marine life, and the tranquil yet powerful presence of the sea, fostering a unique harmony between nature and human experience.</p>
+                    <a href="https://langkawigeopark.com.my/marine-life/" class="discover-btn">Discover</a>
+                </div>
+            </div>
+            <div class="divewithmarinecontainer">
+                <div class="text-content">
+                    <h2>Dive with Marine</h2>
+                    <p>Discover the thrill of coastal adventures with "Drive with Marine." Immerse yourself in breathtaking ocean views, where every turn reveals new wonders of the sea. From the fresh scent of salty air to the mesmerizing sight of waves dancing against the shore, this journey promises an unforgettable experience.
+                        Whether you're seeking serenity or excitement, "Drive with Marine" invites you to explore the beauty of the coast from the comfort of your vehicle. Set your sights on the horizon and let the journey begin.
+                    </p>
+                    <a href="https://www.google.com/search?q=scuba+diving+with+&sca_esv=e74c8da800c397a5&hl=en&sxsrf=ADLYWIIl7yZzMdW1yqAnTN8-Y_UDn6henQ%3A1723904018250&source=hp&ei=ErDAZqHCDNrm2roP_JHwgA4&iflsig=AL9hbdgAAAAAZsC-Iv5vhKTF3W_8-70M5Ea6UVnJI3c5&ved=0ahUKEwihk4f1mvyHAxVas1YBHfwIHOAQ4dUDCBY&uact=5&oq=scuba+diving+with+&gs_lp=Egdnd3Mtd2l6IhJzY3ViYSBkaXZpbmcgd2l0aCAyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESLgeUJoFWMgXcAF4AJABAJgBgQGgAbMOqgEENy4xMbgBA8gBAPgBAZgCE6AC2w6oAgrCAgcQIxgnGOoCwgIKECMYgAQYJxiKBcICBBAjGCfCAgoQABiABBhDGIoFwgILEAAYgAQYkgMYigXCAg0QABiABBixAxhDGIoFwgIIEAAYgAQYkgPCAgsQLhiABBjHARivAcICDRAAGIAEGEMYyQMYigXCAgoQABiABBgUGIcCmAMFkgcENy4xMqAHl4wB&sclient=gws-wiz" class="discover-btn">DISCOVER</a>
+                </div>
+                <div class="image-content">
+                    <img src="public/images/afterpost/divewithmarine.webp" alt="Dive with Marine">
+                </div>
+            </div>
+            
+</div>
+        </div>
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <link rel="icon" href="main-page-img/logo.png" type="image/png">
+                    <h1>Visit Malaysia</h1>
+                    <p>Discover Malaysia's wonders and rich culture. Enjoy your journey through our beautiful country.</p>
+                </div>
+                <div class="footer-right">
+                    <p>Copyright © 2024 by  University Tunku Abdul Rahman. All rights reserved.</p>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+
+    <script>
+        function showDescription(island) {
+    const descriptions = {
+        'Pangkor': {
+            title: 'Pulau Pangkor',
+            description: 'Pulau Pangkor, a tropical paradise on the west coast of Malaysia, is known for its serene beaches, clear waters, and laid-back atmosphere. It offers a perfect escape from the hustle and bustle of city life, with attractions like the Dutch Fort, Batu Bersurat, and vibrant coral reefs for snorkeling and diving.',
+            image: 'public/images/pangkor1.jfif'
+        },
+        'Redang': {
+            title: 'Pulau Redang',
+            description: 'Pulau Redang is one of the largest islands off the east coast of Malaysia, famous for its crystal-clear waters and white sandy beaches. It\'s a haven for divers and snorkelers, with a vibrant underwater world teeming with marine life. The island also offers hiking trails through its lush tropical forests.',
+            image: 'public/images/redang1.jfif'
+        },
+        'Tioman': {
+            title: 'Pulau Tioman',
+            description: 'Pulau Tioman is a small island in the South China Sea, renowned for its rich marine life, coral reefs, and secluded beaches. It\'s a favorite destination for adventurers and nature lovers, offering opportunities for jungle trekking, waterfall exploration, and diving in its pristine waters.',
+            image: 'public/images/tioman1.jfif'
+        },
+        'Manukan': {
+            title: 'Pulau Manukan',
+            description: 'Pulau Manukan is part of the Tunku Abdul Rahman National Park, located off the coast of Kota Kinabalu. This island is known for its marine biodiversity, making it a prime spot for snorkeling and diving. Visitors can also enjoy beach activities or simply relax in the tranquil surroundings.',
+            image: 'public/images/manukan1.jfif'
+        },
+        'Semporna': {
+            title: 'Semporna',
+            description: 'Semporna, located in Sabah, is the gateway to some of the most beautiful islands and marine parks in Malaysia, including the famous Sipadan Island. It\'s a popular destination for diving enthusiasts who come to explore the spectacular underwater landscapes and diverse marine ecosystems.',
+            image: 'public/images/Sempurna.jfif'
+        }
+    };
+
+    document.getElementById('island-title').textContent = descriptions[island].title;
+    document.getElementById('island-description').textContent = descriptions[island].description;
+    document.getElementById('island-photo').src = descriptions[island].image;
+}
+
+
+    window.addEventListener('scroll', function () {
+        var nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.remove('transparent');
+            nav.classList.add('opaque');
+        } else {
+            nav.classList.remove('opaque');
+            nav.classList.add('transparent');
+        }
+    });
+
+        const descriptions = {
+        'Diving': {
+            title: 'Diving',
+            description: "Dive into the vibrant underwater world of Semporna, home to the legendary Sipadan Island's rich marine biodiversity.",
+            image: 'public/images/activity/diving.jpg',
+            link: 'https://www.padi.com/diving-in/malaysia/semporna/'
+        },
+        'Banana Boat': {
+            title: 'Banana Boat',
+            description: "Experience thrilling banana boat rides along the pristine beaches of Pulau Redang, perfect for an adrenaline rush.",
+            image: 'public/images/activity/bananaboat.jfif',
+            link: 'https://www.lagunaredang.com.my/bm/activities/'
+        },
+        'Flyfish': {
+            title: 'Flyfish',
+            description: "Fly above the waves with an exhilarating flyfish ride on the clear waters of Pulau Redang.",
+            image: 'public/images/activity/flyfish.webp',
+            link: 'https://www.lagunaredang.com.my/bm/activities/'
+        },
+        'Horse Riding': {
+            title: 'Horse Riding',
+            description: "Enjoy a serene horse riding experience along the scenic coastal trails of Pulau Pangkor.",
+            image: 'public/images/activity/horse riding.jpg',
+            link: 'https://www.bizmalay.com/phr-horse-riding-016-253-4898'
+        },
+        'Jungle Trekking': {
+            title: 'Jungle Trekking',
+            description: "Embark on an adventurous jungle trek through the lush, tropical forests of Pulau Tioman.",
+            image: 'public/images/activity/jungle.jpg',
+            link: 'https://www.amantioman.com/jungle-trekking/'
+        },
+        'Kayak': {
+            title: 'Kayak',
+            description: "Paddle through the calm, turquoise waters of Pulau Manukan, offering stunning views of the surrounding islands.",
+            image: 'public/images/activity/kayak.jpg',
+            link: 'https://www.kkday.com/en-my/product/136473-shared-boat-ticket-manukan-sapi-mamutik-island-from-sutera-harbour-marina-jetty-sabah'
+        },
+        'Standboard': {
+            title: 'Standboard',
+            description: "Glide over the gentle waves of Pulau Tioman on a stand-up paddleboard, surrounded by breathtaking scenery.",
+            image: 'public/images/activity/standboard.jpg',
+            link: 'https://www.payabeach.com/my/pulau_tioman_packages'
+        },
+        'Snorkeling': {
+            title: 'Snorkeling',
+            description: "Snorkel in the crystal-clear waters of Semporna, exploring vibrant coral reefs and abundant marine life.",
+            image: 'public/images/activity/diving.jpg',
+            link: 'https://www.scuba-junkie.com/snorkeling/'
+        },
+        'Surfing': {
+            title: 'Surfing',
+            description: " Catch the perfect wave and surf the uncrowded breaks of Pulau Pangkor's serene beaches.",
+            image: 'public/images/activity/surf.webp',
+            link: 'https://www.holidaygogogo.com/surfing-tour-in-malaysia/'
+        },
+        
+    };
+
+    function createCards(data) {
+        const container = document.getElementById('card-container');
+
+        Object.keys(data).forEach(key => {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            card.innerHTML = `
+                <img src="${data[key].image}" alt="${data[key].title}">
+                <div class="card-content">
+                    <h3>${data[key].title}</h3>
+                    <p>${data[key].description}</p>
+                    <a href="${data[key].link}">Learn More</a>
+                </div>
+            `;
+
+            container.appendChild(card);
+        });
+    }
+
+    createCards(descriptions);
+
+    document.addEventListener('scroll', function() {
+    var gotopbtn = document.querySelector('.gotopbtn');
+    if (window.scrollY > 300) { // Adjust the value to control when the button appears
+        gotopbtn.classList.add('visible');
+    } else {
+        gotopbtn.classList.remove('visible');
+    }
+});
+    // Function for the nav at the top to have a transition
+    window.addEventListener('scroll', function() {
+        var nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.remove('transparent');
+            nav.classList.add('opaque');
+        } else {
+            nav.classList.remove('opaque');
+            nav.classList.add('transparent');
+        }
+    });
+    </script>
+</body>
+</html>
