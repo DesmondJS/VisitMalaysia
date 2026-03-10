@@ -34,7 +34,7 @@ const hotelData = {
                 image: "image/kl6.jpg",
                 description: "Conveniently set in the centre of Kuala Lumpur, Grand Hyatt Kuala Lumpur is within 90 metres of Kuala Lumpur Convention Center and 700 metres of KLCC Park."
             },
-            
+
         ]
     },
 
@@ -49,7 +49,7 @@ const hotelData = {
             },
             {
                 name: "LiLLA Rainforest Retreats Hulu Langat",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/504895824.webp?k=748bf0cea05abf0520eb04290089c33cb6c01fe26b5407a75eb4df2ee688c9b5&o=",
+                image: "https://hululangat.lillaresorts.com/img/1ae4bde8e281682b.webp",
                 description: "Located in Hulu Langat, 33 km from Petrosains, The Discovery Centre, LiLLA Rainforest Retreats Hulu Langat provides accommodation with a garden, free private parking and a terrace."
             },
             {
@@ -69,10 +69,10 @@ const hotelData = {
             },
             {
                 name: "Kepler Club Kuala Lumpur Airport ",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/546867486.webp?k=443601881b08c6592efe4c8f88d769155ce1157e014d7df25516373769f00f8d&o=",
+                image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/615846994.jpg?k=33c3dab2a499bd3ce3f65294c67e5a935860dda63a15734b2f564f8a9de36651&o=",
                 description: "Set within 44 km of District 21 IOI City and 45 km of IOI City Mall, Kepler Club Kuala Lumpur Airport - KLIA T1 Landside offers rooms with air conditioning and a shared bathroom in Sepang."
             },
-            
+
         ]
     },
 
@@ -110,7 +110,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/568697972.webp?k=f264fdd810c1257bb94a40b574c5e27d4a6e84f1755922a97679a1ff4640ec4e&o=",
                 description: "Located within 2 km of Palm Mall Seremban and 49 km of District 21 IOI City, S.S.HOTEL SEREMBAN provides rooms in Seremban."
             },
-            
+
         ]
     },
 
@@ -120,7 +120,7 @@ const hotelData = {
         hotels: [
             {
                 name: "Baba House Melaka",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/451016100.webp?k=18c4a5af84dcb08df479b94ad886ef85710e255c5952a693a8b599e7f4f199d1&o=",
+                image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/84/5b/f8/caption.jpg?w=900&h=500&s=1",
                 description: "Housed in a heritage building showcasing traditional Peranakan culture, Baba House Melaka is a 3-minute walk from bustling Jonker Street. "
             },
             {
@@ -148,7 +148,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/455013490.webp?k=9d142bd182a2f4a4ea8c71e1bc642799e16d27ac6fd99b5081fe905f0f1d21d1&o=",
                 description: "Set in Melaka, near Baba & Nyonya Heritage Museum, Straits Chinese Jewelry Museum Malacca and Menara Taming Sari, The Opposite Place features a garden."
             },
-            
+
         ]
     },
 
@@ -186,7 +186,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/507766097.webp?k=23f3411775b10065293ef1ee206a278fa7754f685eaea1aba4b92d918d73c766&o=",
                 description: "Situated in Nusajaya, 33 km from Singapore Zoo, Fraser Place Puteri Harbour offers accommodation with a fitness centre."
             },
-            
+
         ]
     },
 
@@ -224,7 +224,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/61175227.webp?k=2954f055031ee997cb6d72c8e052221942ba531e59e025cd8cfb6e821d4195c3&o=",
                 description: "Humaira Hotel is set in Tanah Merah. This 3-star hotel offers room service, a 24-hour front desk and free WiFi. The property is non-smoking and is located 49 km from Kelantan Golf & Country Club."
             },
-            
+
         ]
     },
 
@@ -262,7 +262,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/440456363.webp?k=de5a04a9b533ff7a6013ca169ccedf9e5b3a9bd73ed0f297a07ba8dde3c3b32c&o=",
                 description: "Dayang Bay Resort Langkawi has a fitness centre, a garden and a sun terrace with swimming pool and Asian breakfast in Kuah."
             },
-            
+
         ]
     },
 
@@ -272,7 +272,7 @@ const hotelData = {
         hotels: [
             {
                 name: "The Haven All Suite Resort, Ipoh",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/164131411.webp?k=b3b834a7a67d07f18113bec511140fe6d4878c254745eb5468a5026a6eccf024&o=",
+                image: "https://images.trvl-media.com/lodging/8000000/7720000/7711900/7711896/8c369804.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
                 description: "Located in Ipoh, 2 km from Lost World of Tambun, The Haven All Suite Resort, Ipoh provides accommodation with a fitness centre, free private parking, a garden and a terrace."
             },
             {
@@ -292,7 +292,7 @@ const hotelData = {
             },
             {
                 name: "The Banjaran Hotsprings Retreat",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/78475717.webp?k=a215a146e55b97b128fcfa9008f9b2ace07aa4c7eae9ed01d5b94b58ab92aa00&o=",
+                image: "https://image-tc.galaxy.tf/wijpeg-39km3w1rhs7tg5sx8s0rfvldt/contact-us.jpg",
                 description: "Located in Ipoh, 1.1 km from Lost World of Tambun, The Banjaran Hotsprings Retreat provides accommodation with an outdoor swimming pool."
             },
             {
@@ -300,7 +300,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/186361258.webp?k=74bab8a98eebc959d6c07d1d71b656acaf441ffd6f8a7fe9727af0463f22e771&o=",
                 description: "Featuring 4-star accommodation, Hotel Excelsior Ipoh is located in Ipoh, 800 metres from Ipoh Parade and 5.6 km from AEON Mall Kinta City."
             },
-            
+
         ]
     },
 
@@ -330,7 +330,7 @@ const hotelData = {
             },
             {
                 name: "DEWATI ROOMSTAY B&B",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/517598829.webp?k=802eff27227590daada28e14a981abf94491296fbed37ba25efcc4693e0cd8dc&o=",
+                image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/2e/90/7c/dewati-b-b.jpg?w=900&h=-1&s=1",
                 description: "Situated on the beachfront in Lang Tengah and boasting a private beach area, DEWATI ROOMSTAY B&B has free WiFi throughout the property."
             },
             {
@@ -338,7 +338,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/392546715.webp?k=b606d84a483ebb7bd9eb129c9320b60612fab3b5b53ac8b4eed9294363e76d1f&o=",
                 description: "Set in Cukai, 21 km from Limbong Art and 21 km from Cherating Turtle Santuary, Homestay SJTM offers a shared lounge and air conditioning."
             },
-            
+
         ]
     },
 
@@ -376,7 +376,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/11705188.webp?k=91f70addbdeea2cd3546f8cc5fc4b3754e16107438c9e876e1c5d81687c4c469&o=",
                 description: "Situated in Bukit Tinggi, 40 km from First World Plaza, The Chateau Spa & Wellness Resort features accommodation with an outdoor swimming pool."
             },
-            
+
         ]
     },
 
@@ -414,7 +414,7 @@ const hotelData = {
                 image: "https://cf.bstatic.com/xdata/images/hotel/square600/578432791.webp?k=44b15bea47eba882ae65f27b9479f781d2ebcd5c1001b2e0d402b0655c1198b0&o=",
                 description: "Urban Suite 3BR The Martian 2Cp #Netflix is a recently renovated apartment in Jelutong, where guests can makes the most of its infinity pool, fitness centre and garden."
             },
-            
+
         ]
     },
 
@@ -444,15 +444,15 @@ const hotelData = {
             },
             {
                 name: "Lembah Saerah Resort",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/499056313.webp?k=68f8e350ec1e558c680e98458e8664564c4f8fe80699eb9f855bae56c6d2f191&o=",
+                image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/591504341.jpg?k=3e941f86b56b404995174ed65f2b3eb614a2e39eb27e6c1361fd38590dd3ac9f&o=",
                 description: "Located in Kangar and with Asian Cultural Village reachable within 41 km, Lembah Saerah Resort provides an outdoor swimming pool, non-smoking rooms, free WiFi throughout the property."
             },
             {
                 name: "365 View Point Resort",
-                image: "https://cf.bstatic.com/xdata/images/hotel/square600/520447777.webp?k=954577d0016dc4cc682ecdfef7957c54161aeac60a05529d7e3d51da3d24eb95&o=",
+                image: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/592816566.jpg?k=f4119152116889d9400d64b22e816759863c80e52ccd263cdfd3f16170b8e727&o=",
                 description: "Located in Kaki Bukit, 39 km from Asian Cultural Village, 365 View Point Resort provides accommodation with free bikes, free private parking, a fitness centre and a garden."
             },
-            
+
         ]
     },
 
@@ -490,7 +490,7 @@ const hotelData = {
                 image: "image/sabah6.jpg",
                 description: "Ayana Holiday Resort features garden views, free WiFi and free private parking, located in Kundasang."
             },
-            
+
         ]
     },
     sarawak: {
@@ -529,7 +529,7 @@ const hotelData = {
             }
         ]
     }
-    
+
 };
 
 function changeLocation(location) {
@@ -539,7 +539,7 @@ function changeLocation(location) {
     document.getElementById('pageTitle').textContent = data.title;
     document.getElementById('pageDescription').textContent = data.description;
 
-   
+
     const hotelGrid = document.getElementById('hotelGrid');
     hotelGrid.innerHTML = '';
 
